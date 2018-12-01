@@ -10,6 +10,8 @@ namespace DB.MenuPack
 
         [Space(10)]
 
+        [SerializeField] private string audioPrefKey = "AudioMainVolume";
+
         [SerializeField] private AudioMixer mixer;
         [SerializeField] private string volumeParameter;
         [SerializeField] [Range(0, 100)] private float defaultVolume = 75f;
@@ -19,13 +21,13 @@ namespace DB.MenuPack
         [SerializeField] private Slider audioSlider;
         [SerializeField] private TextMeshProUGUI audioPercentageText;
 
-        public override void Awake()
+        public override void Init()
         {
-            base.Awake();
+            base.Init();
 
             audioSlider.minValue = 0;
             audioSlider.maxValue = 100;
-            audioSlider.value = defaultVolume;
+            audioSlider.value = !string.IsNullOrEmpty(audioPrefKey) && PlayerPrefs.HasKey(audioPrefKey) ? PlayerPrefs.GetFloat(audioPrefKey) : defaultVolume;
             audioSlider.onValueChanged.AddListener(SetMixerVolume);
 
             if (mixer)
@@ -42,6 +44,11 @@ namespace DB.MenuPack
                 mixer.SetFloat(volumeParameter, (value - 80));
             }
             audioPercentageText.text = Mathf.Round(audioSlider.value) + "%";
+
+            if (!string.IsNullOrEmpty(audioPrefKey))
+            {
+                PlayerPrefs.SetFloat(audioPrefKey, value);
+            }
         }
     }
 }

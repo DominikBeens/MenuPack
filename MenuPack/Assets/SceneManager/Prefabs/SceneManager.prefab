@@ -235,6 +235,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1020762695194098
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,11 +377,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -468,6 +469,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1063450094372582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,6 +1337,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1108111524390238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,6 +1450,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &114762273986186278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1573,6 +1577,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1148380172150120
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,6 +1653,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &114037074091135796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1774,6 +1780,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1150734879303242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,6 +1856,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &114760888314698114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2053,6 +2061,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1225777370081136
 GameObject:
   m_ObjectHideFlags: 0
@@ -2130,6 +2139,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &114578010827096938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2665,6 +2675,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &114549374252837968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2891,6 +2902,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1258828803490068
 GameObject:
   m_ObjectHideFlags: 0
@@ -2964,6 +2976,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1284290691810550
 GameObject:
   m_ObjectHideFlags: 0
@@ -3198,6 +3211,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &114170226908362146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3479,6 +3493,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &114718384161659458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3605,6 +3620,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1321910249087838
 GameObject:
   m_ObjectHideFlags: 0
@@ -3620,7 +3636,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &224385750987149546
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3700,6 +3716,7 @@ MonoBehaviour:
   settingTitleText: {fileID: 114091878189587862}
   minSensitivity: 0.01
   maxSensitivity: 1
+  defaultSensitivity: 0.5
   mouseSensSlider: {fileID: 114412123795220164}
   mouseSensText: {fileID: 114938655945546686}
 --- !u!1 &1341233781483090
@@ -3775,6 +3792,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1342014019736058
 GameObject:
   m_ObjectHideFlags: 0
@@ -3850,6 +3868,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &114820209959995592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3976,6 +3995,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1355803975613136
 GameObject:
   m_ObjectHideFlags: 0
@@ -4287,6 +4307,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &114260321823912166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4418,6 +4439,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &114472883867735694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4540,6 +4562,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &114940222340937806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4864,6 +4887,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1536195098322826
 GameObject:
   m_ObjectHideFlags: 0
@@ -5097,6 +5121,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1541247112734080
 GameObject:
   m_ObjectHideFlags: 0
@@ -5172,6 +5197,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &114090199330089306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5277,6 +5303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settingTitle: Main Volume
   settingTitleText: {fileID: 114672800943951818}
+  audioPrefKey: AudioMainVolume
   mixer: {fileID: 0}
   volumeParameter: 
   defaultVolume: 75
@@ -5493,6 +5520,7 @@ MonoBehaviour:
   m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 2
+  m_UseSpriteMesh: 0
 --- !u!1 &1608733687975944
 GameObject:
   m_ObjectHideFlags: 0
@@ -5901,6 +5929,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1643561390502476
 GameObject:
   m_ObjectHideFlags: 0
@@ -5974,6 +6003,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1663398354033406
 GameObject:
   m_ObjectHideFlags: 0
@@ -6084,6 +6114,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1673195879831632
 GameObject:
   m_ObjectHideFlags: 0
@@ -6195,6 +6226,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &114549054625388166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6425,11 +6457,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -6932,6 +6964,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1713659387294316
 GameObject:
   m_ObjectHideFlags: 0
@@ -7058,6 +7091,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1716793569204768
 GameObject:
   m_ObjectHideFlags: 0
@@ -7235,6 +7269,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &114867365091394854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7361,6 +7396,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1779494693229560
 GameObject:
   m_ObjectHideFlags: 0
@@ -7434,6 +7470,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1782892826967808
 GameObject:
   m_ObjectHideFlags: 0
@@ -7507,6 +7544,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1792368967637074
 GameObject:
   m_ObjectHideFlags: 0
@@ -7814,6 +7852,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1833641755435050
 GameObject:
   m_ObjectHideFlags: 0
@@ -8192,7 +8231,7 @@ MonoBehaviour:
   pauseInputButton: Cancel
   canPauseWithSpecifiedButton: 1
   pausePanel: {fileID: 1321910249087838}
-  cannotPauseScenes: 
+  cannotPauseSceneIndexes: 
 --- !u!114 &114872719032478948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8284,6 +8323,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1884730518880902
 GameObject:
   m_ObjectHideFlags: 0
@@ -8357,6 +8397,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1888019008049808
 GameObject:
   m_ObjectHideFlags: 0
@@ -8445,6 +8486,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1901211002396668
 GameObject:
   m_ObjectHideFlags: 0
@@ -8521,6 +8563,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &114995288272731672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9171,11 +9214,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -9330,11 +9373,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -9421,6 +9464,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &149703286849050519
 GameObject:
   m_ObjectHideFlags: 0
@@ -9497,6 +9541,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &4841781601059588402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9761,6 +9806,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &439698922314246618
 GameObject:
   m_ObjectHideFlags: 0
@@ -9836,6 +9882,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &4135807544696270625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9956,6 +10003,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &899814671902654267
 GameObject:
   m_ObjectHideFlags: 0
@@ -10029,6 +10077,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &901286153726097342
 GameObject:
   m_ObjectHideFlags: 0
@@ -10346,6 +10395,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1054053829579284490
 GameObject:
   m_ObjectHideFlags: 0
@@ -10423,6 +10473,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &3262862026605203183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10555,6 +10606,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &8665811839310136235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10711,6 +10763,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1671445184833378911
 GameObject:
   m_ObjectHideFlags: 0
@@ -11117,6 +11170,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &1961190344033930994
 GameObject:
   m_ObjectHideFlags: 0
@@ -11309,6 +11363,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &2428050306782792270
 GameObject:
   m_ObjectHideFlags: 0
@@ -11665,6 +11720,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &7580167001769982377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11806,6 +11862,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &3276628796762099124
 GameObject:
   m_ObjectHideFlags: 0
@@ -11915,6 +11972,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &3993328393598551910
 GameObject:
   m_ObjectHideFlags: 0
@@ -12236,6 +12294,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &674334770933097352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12365,6 +12424,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &4558303389999562901
 GameObject:
   m_ObjectHideFlags: 0
@@ -12441,6 +12501,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &6288623342076796276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12546,6 +12607,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &5323332963626145782
 GameObject:
   m_ObjectHideFlags: 0
@@ -12619,6 +12681,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &5412000632884010690
 GameObject:
   m_ObjectHideFlags: 0
@@ -12692,6 +12755,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &5521801488763848960
 GameObject:
   m_ObjectHideFlags: 0
@@ -12765,6 +12829,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &6028600592214122647
 GameObject:
   m_ObjectHideFlags: 0
@@ -12838,6 +12903,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &6054433316961929437
 GameObject:
   m_ObjectHideFlags: 0
@@ -12963,6 +13029,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &6303250368702604072
 GameObject:
   m_ObjectHideFlags: 0
@@ -13231,6 +13298,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &6937600363485634948
 GameObject:
   m_ObjectHideFlags: 0
@@ -13427,6 +13495,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &2285260388602431519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13901,6 +13970,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &7797738250954016738
 GameObject:
   m_ObjectHideFlags: 0
@@ -13978,6 +14048,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &1456588208172481723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14429,6 +14500,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &7596205578519309654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14560,6 +14632,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &3058349710237083990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14695,6 +14768,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &8603540534397616022
 GameObject:
   m_ObjectHideFlags: 0
@@ -14981,6 +15055,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!114 &1810280341824295440
 MonoBehaviour:
   m_ObjectHideFlags: 0

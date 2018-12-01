@@ -31,6 +31,16 @@ namespace DB.MenuPack
             }
 
             SetupDefaultSettings();
+            InitSettings();
+        }
+
+        private void InitSettings()
+        {
+            Setting[] settings = GetComponentsInChildren<Setting>(true);
+            for (int i = 0; i < settings.Length; i++)
+            {
+                settings[i].Init();
+            }
         }
 
         public void ToggleSettingsPanel(bool b)
@@ -142,12 +152,12 @@ namespace DB.MenuPack
             dropdown_ShadowQuality.ClearOptions();
 
             List<string> shadowQualityOptions = new List<string>
-        {
-            "Low",
-            "Medium",
-            "High",
-            "Very High"
-        };
+            {
+                "Low",
+                "Medium",
+                "High",
+                "Very High"
+            };
             shadowQualityOptions.Reverse();
             dropdown_ShadowQuality.AddOptions(shadowQualityOptions);
             dropdown_ShadowQuality.value = (int)QualitySettings.shadowResolution;
@@ -158,25 +168,7 @@ namespace DB.MenuPack
         private void OnShadowQualityValueChanged(int i)
         {
             // Reverse i because shadowQualityOptions in SetupShadowQualityDropdown() gets reversed so that the highest quality is at the top of the dropdown menu.
-            switch (i)
-            {
-                case 0:
-
-                    i = 3;
-                    break;
-                case 1:
-
-                    i = 2;
-                    break;
-                case 2:
-
-                    i = 1;
-                    break;
-                case 3:
-
-                    i = 0;
-                    break;
-            }
+            i = Mathf.Abs(i - (dropdown_ShadowQuality.options.Count - 1));
 
             QualitySettings.shadowResolution = (ShadowResolution)i;
             print(QualitySettings.shadowResolution);
