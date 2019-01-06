@@ -37,6 +37,7 @@ namespace DB.MenuPack
         [Header("Pause Game")]
         [SerializeField] private string pauseInputButton = "Cancel";
         [SerializeField] private bool canPauseWithSpecifiedButton = true;
+        [SerializeField] private bool stopTimeWhenPaused = true;
         [SerializeField] private GameObject pausePanel;
         [SerializeField] private List<int> cannotPauseSceneIndexes = new List<int>();
 
@@ -91,7 +92,10 @@ namespace DB.MenuPack
 
             pausePanel.SetActive(isPaused);
             SettingsManager.instance.ToggleSettingsPanel(false);
-            Time.timeScale = isPaused ? 0 : 1;
+            if (stopTimeWhenPaused)
+            {
+                Time.timeScale = isPaused ? 0 : 1;
+            }
 
             // Saving cursor mode pre pause.
             if (isPaused)
