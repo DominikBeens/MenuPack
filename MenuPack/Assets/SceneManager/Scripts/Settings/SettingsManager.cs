@@ -9,7 +9,7 @@ namespace DB.MenuPack
 
         public static SettingsManager instance;
 
-        [SerializeField] private GameObject settingsPanel;
+        [SerializeField] private Canvas settingsCanvas;
         [SerializeField] private GameObject defaultOpenSettingPanel;
         private GameObject openSettingPanel;
 
@@ -30,8 +30,15 @@ namespace DB.MenuPack
                 Destroy(this);
             }
 
+            SetupCanvas();
             SetupDefaultSettings();
             InitSettings();
+        }
+
+        private void SetupCanvas()
+        {
+            settingsCanvas.gameObject.SetActive(true);
+            settingsCanvas.enabled = false;
         }
 
         private void InitSettings()
@@ -45,7 +52,7 @@ namespace DB.MenuPack
 
         public void ToggleSettingsPanel(bool b)
         {
-            settingsPanel.SetActive(b);
+            settingsCanvas.enabled = b;
 
             if (b && defaultOpenSettingPanel)
             {

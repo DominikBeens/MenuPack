@@ -20,6 +20,7 @@ namespace DB.MenuPack
         private bool prePauseCursorVisibility;
 
         [Header("Scene Transitions")]
+        [SerializeField] private Canvas transitionCanvas;
         [SerializeField] private Animator transitionAnim;
         [SerializeField] private bool pickRandomTransition;
         [SerializeField] private List<RuntimeAnimatorController> transitionAnimators = new List<RuntimeAnimatorController>();
@@ -35,10 +36,10 @@ namespace DB.MenuPack
         [SerializeField] private Image loadingBarFill;
 
         [Header("Pause Game")]
+        [SerializeField] private Canvas pauseCanvas;
         [SerializeField] private string pauseInputButton = "Cancel";
         [SerializeField] private bool canPauseWithSpecifiedButton = true;
         [SerializeField] private bool stopTimeWhenPaused = true;
-        [SerializeField] private GameObject pausePanel;
         [SerializeField] private List<int> cannotPauseSceneIndexes = new List<int>();
 
         public static event Action OnLevelLoaded = delegate { };
@@ -56,6 +57,8 @@ namespace DB.MenuPack
             {
                 Destroy(gameObject);
             }
+
+            SetupCanvases();
         }
 
         private void Update()
@@ -90,7 +93,7 @@ namespace DB.MenuPack
             isPaused = !isPaused;
             OnGamePaused(isPaused);
 
-            pausePanel.SetActive(isPaused);
+            pauseCanvas.enabled = isPaused;
             SettingsManager.instance.ToggleSettingsPanel(false);
             if (stopTimeWhenPaused)
             {
@@ -117,7 +120,7 @@ namespace DB.MenuPack
         public void LoadScene(int index, bool stopTimeWhenLoading)
         {
             // Prevents the level from loading if theres already another level loading or if the game is paused. 
-            if (isLoadingLevel || pausePanel.activeInHierarchy)
+            if (isLoadingLevel || pauseCanvas.enabled)
             {
                 return;
             }
@@ -146,6 +149,7 @@ namespace DB.MenuPack
             }
 
             // Set the transition speed and display a transition animation.
+            transitionCanvas.enabled = true;
             transitionAnim.speed = tSpeedIn;
             transitionAnim.Play("Transition In");
 
@@ -180,6 +184,7 @@ namespace DB.MenuPack
                 yield return null;
             }
             transitionComplete = false;
+            transitionCanvas.enabled = false;
 
             // If the time was stopped, set it to one. If it wasn't stopped leave it as it is.
             Time.timeScale = stopTimeWhenLoading ? 1 : Time.timeScale;
@@ -187,6 +192,15 @@ namespace DB.MenuPack
             isLoadingLevel = false;
             // Fires an OnLevelLoaded event so that all subscribed scripts can start doing their thing.
             OnLevelLoaded();
+        }
+
+        private void SetupCanvases()
+        {
+            pauseCanvas.gameObject.SetActive(true);
+            pauseCanvas.enabled = false;
+
+            transitionCanvas.gameObject.SetActive(true);
+            transitionCanvas.enabled = false;
         }
 
         private bool DoesInputButtonExist(string buttonName)
