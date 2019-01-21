@@ -9,6 +9,8 @@ namespace DB.MenuPack
 
         public static SettingsManager instance;
 
+        private const string VSYNC_PREF_KEY = "VSync";
+
         [SerializeField] private Canvas settingsCanvas;
         [SerializeField] private GameObject defaultOpenSettingPanel;
         private GameObject openSettingPanel;
@@ -95,9 +97,16 @@ namespace DB.MenuPack
                 "On"
             };
             dropdown_VSync.AddOptions(vSyncOptions);
-            dropdown_VSync.value = QualitySettings.vSyncCount;
 
-            dropdown_VSync.onValueChanged.AddListener((int i) => QualitySettings.vSyncCount = i);
+            QualitySettings.vSyncCount = 0;
+            int defaultSetting = PlayerPrefs.HasKey(VSYNC_PREF_KEY) ? PlayerPrefs.GetInt(VSYNC_PREF_KEY) : QualitySettings.vSyncCount;
+            dropdown_VSync.value = defaultSetting;
+
+            dropdown_VSync.onValueChanged.AddListener((int i) =>
+            {
+                QualitySettings.vSyncCount = i;
+                PlayerPrefs.SetInt(VSYNC_PREF_KEY, i);
+            });
         }
 
         private void SetupAADropdown()

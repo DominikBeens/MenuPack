@@ -8,7 +8,7 @@ namespace DB.MenuPack
     {
 
         public static float mouseSensitivity = 0.1f;
-        private const string mouseSensPrefKey = "MouseSensitivity";
+        private const string MOUSE_SENS_PREF_KEY = "MouseSensitivity";
 
         [SerializeField] private float minSensitivity = 0.01f;
         [SerializeField] private float maxSensitivity = 1f;
@@ -20,7 +20,7 @@ namespace DB.MenuPack
         {
             base.Init();
 
-            mouseSensitivity = PlayerPrefs.HasKey(mouseSensPrefKey) ? PlayerPrefs.GetFloat(mouseSensPrefKey) : defaultSensitivity;
+            mouseSensitivity = PlayerPrefs.HasKey(MOUSE_SENS_PREF_KEY) ? PlayerPrefs.GetFloat(MOUSE_SENS_PREF_KEY) : defaultSensitivity;
 
             mouseSensSlider.minValue = minSensitivity;
             mouseSensSlider.maxValue = maxSensitivity;
@@ -35,7 +35,7 @@ namespace DB.MenuPack
             mouseSensitivity = value;
             mouseSensText.text = mouseSensitivity.ToString("F2");
 
-            PlayerPrefs.SetFloat(mouseSensPrefKey, mouseSensitivity);
+            PlayerPrefs.SetFloat(MOUSE_SENS_PREF_KEY, mouseSensitivity);
         }
     }
 }
